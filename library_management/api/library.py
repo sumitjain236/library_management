@@ -10,7 +10,7 @@ def get_library_transaction_count():
     
     # return L
         
-    return frappe.db.sql("""select library_member, count(*) as count from `tabLibrary Transaction` group by library_member""")
+    return frappe.db.sql("""select library_member, count(*) as count from `tabLibrary Transaction` group by library_member""",as_dict=1)
     
 @frappe.whitelist()
 
