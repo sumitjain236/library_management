@@ -1,0 +1,15 @@
+{
+  "name": "library_management",
+  "version": "1.0.0",
+  "description": "\u001bOS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd library && yarn dev",
+    "build": "cd library && yarn build",
+    "postinstall": "cd library && yarn install"
+  },
+  "dependencies": {
+    "swr": "^1.3.0"
+  }
+}
