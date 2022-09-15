@@ -1,25 +1,34 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "LM.#####",
- "creation": "2022-07-19 13:10:53.238803",
+ "creation": "2022-09-14 18:48:02.098165",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "email",
+  "phone",
   "first_name",
   "last_name",
-  "full_name",
-  "email_address",
-  "phone"
+  "typescript_table"
  ],
  "fields": [
   {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "First Name",
-   "reqd": 1
+   "label": "First Name"
   },
   {
    "fieldname": "last_name",
@@ -27,31 +36,18 @@
    "label": "Last Name"
   },
   {
-   "fieldname": "full_name",
-   "fieldtype": "Data",
-   "label": "Full Name",
-   "read_only": 1
-  },
-  {
-   "fieldname": "email_address",
-   "fieldtype": "Data",
-   "label": "Email Address ",
-   "options": "Email"
-  },
-  {
-   "fieldname": "phone",
-   "fieldtype": "Data",
-   "label": "Phone",
-   "options": "Phone"
+   "fieldname": "typescript_table",
+   "fieldtype": "Table",
+   "label": "Typescript Table",
+   "options": "Table Doctype"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-15 18:51:53.984637",
+ "modified": "2022-09-14 19:50:40.118895",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Library Member",
- "naming_rule": "Expression (old style)",
+ "name": "Typescript Check Doctype",
  "owner": "Administrator",
  "permissions": [
   {
